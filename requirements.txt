@@ -1,0 +1,17 @@
+numpy
+pandas
+scikit-learn
+scipy
+joblib
+
+matplotlib
+seaborn
+plotly
+
+streamlit
+requests
+
+azure-ai-ml
+azure-identity
+azure-core
+azure-storage-blob
