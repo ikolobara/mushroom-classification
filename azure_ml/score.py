@@ -3,8 +3,7 @@ import json
 import numpy as np
 import os
 
-# List of features used for training
-selected_features = ["odor", "spore-print-color", "gill-color", "ring-type", "stalk-surface-above-ring"]  # replace with your actual feature names
+selected_features = ["odor", "spore-print-color", "gill-color", "ring-type", "stalk-surface-above-ring"] 
 
 def init():
     """
@@ -13,13 +12,11 @@ def init():
     """
     global model
     
-    # Path where Azure stores your model
     model_path = os.path.join(
         os.getenv("AZUREML_MODEL_DIR"), 
         "best_svm_model.pkl"
     )
     
-    # Load the model
     model = joblib.load(model_path)
     print("SVM model loaded successfully")
 
